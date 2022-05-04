@@ -160,7 +160,7 @@ export default class App extends Component{
           </span>
           <br/>
           <span className='p-float-label'>  
-            <InputNumber value={this.state.user.numero_telefono} id = 'numero_telefono' style={{width:'100%', margin: '5px'}} onChange={(e) =>{ 
+            <InputText value={this.state.user.numero_telefono} id = 'numero_telefono' style={{width:'100%', margin: '5px'}} onChange={(e) =>{ 
               let val = e.target.value;
               this.setState(prevState => {
                 let user = Object.assign({}, prevState.user);
@@ -169,6 +169,7 @@ export default class App extends Component{
               })}}/>
             <label htmlFor='numero_telefono'>Teléfono</label>
           </span>
+          
         </Dialog>
         <Toast ref={toast => {this.toast = toast}} />
       </div>
