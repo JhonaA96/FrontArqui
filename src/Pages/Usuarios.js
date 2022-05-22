@@ -43,6 +43,10 @@ export class Usuarios extends Component{
     };
     this.items = [
       {
+        label: 'Inicio',
+        icon: 'pi pi-fw pi-home',
+        url: '/',
+      },{
         label: 'Crear',
         icon: 'pi pi-fw pi-plus',
         command: () => {this.showSaveDialog()}
@@ -54,7 +58,7 @@ export class Usuarios extends Component{
         label: 'Eliminar',
         icon: 'pi pi-fw pi-trash',
         command: () => {this.delete()}
-      }
+      },
     ];
     
     this.userService = new UserService();
@@ -119,7 +123,7 @@ export class Usuarios extends Component{
       <div style={{width: '80%', margin: ' 20px auto 0px'}}>
         <Menubar model = {this.items} style={{margin: '20px auto 10px'}}/>
         <Panel header = 'Proyecto Arquitectura'>
-          <DataTable value={this.state.users} selectionMode="single" selection={this.state.selectedUser} onSelectionChange={e => this.setState({selectedUser: e.value})}>
+          <DataTable value={this.state.users} selectionMode="single" selection={this.state.selectedUser} onSelectionChange={e => this.setState({selectedUser: e.value})} sortField='id' sortOrder={1}>
             <Column field='id' header='Id'></Column>
             <Column field='nombres' header='Nombres'></Column>
             <Column field='usuario' header='Usuario'></Column>

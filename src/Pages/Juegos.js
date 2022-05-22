@@ -35,6 +35,10 @@ export class Juegos extends Component{
     };
     this.items = [
         {
+          label: 'Inicio',
+          icon: 'pi pi-fw pi-home',
+          url: '/'
+        },{
           label: 'Crear',
           icon: 'pi pi-fw pi-plus',
           command: () => {this.showSaveDialog()}
@@ -46,7 +50,7 @@ export class Juegos extends Component{
           label: 'Eliminar',
           icon: 'pi pi-fw pi-trash',
           command: () => {this.delete()}
-        }
+        },
     ];
 
     this.juegosService = new JuegosService();
