@@ -58,19 +58,6 @@ export class Juegos extends Component{
         <Button label= 'Confirmar' icon= 'pi pi-check' onClick = {this.save}/>
       </div>
     );
-
-/*     this.formatDate = (value) => {
-      return value.toLocaleDateString('en-US', {
-          day: '2-digit',
-          month: '2-digit',
-          year: 'numeric',
-      });
-    }
-
-    this.dateBodyTemplate = (rowData) => {
-      rowData = this.state.juegos;
-      return this.formatDate(rowData.fechaCreacion);
-    } */
   }
 
   componentDidMount(){
