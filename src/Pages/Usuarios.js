@@ -128,7 +128,6 @@ export class Usuarios extends Component{
             <Column field='nombres' header='Nombres'></Column>
             <Column field='usuario' header='Usuario'></Column>
             <Column field='correo_electronico' header='Correo Electronico'></Column>
-            <Column field='password' header='Contraseña'></Column>
             <Column field='numero_telefono' header='Número de Telefono'></Column>
             <Column field='typeUser.nombre' header='Tipo de Usuario'></Column>
           </DataTable>

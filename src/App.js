@@ -7,7 +7,7 @@ import {
 
 import { Usuarios } from './Pages/Usuarios'
 import { Juegos } from './Pages/Juegos'
-import { Index } from './Pages/'
+import Login from './Pages/Login'
 
 function App() {
     return (
@@ -15,7 +15,7 @@ function App() {
         <Switch>
           <Route path='/usuarios' component= { Usuarios }/>
           <Route path= '/juegos' component= { Juegos }/>
-          <Route path= '/' component={ Index }/>
+          <Route path= '/' component={ Login }/>
         </Switch>
       </Router>
 
