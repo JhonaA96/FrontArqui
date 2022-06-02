@@ -188,7 +188,7 @@ export class Usuarios extends Component{
               let val = e.target.value;
               this.setState(prevState => {
                 let typeUser = Object.assign({}, prevState.typeUser);
-                typeUser.id = val;
+                typeUser.nombre = val;
                 return { typeUser }
               })
             }} />
