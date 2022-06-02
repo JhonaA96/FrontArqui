@@ -187,9 +187,9 @@ export class Usuarios extends Component{
             <Dropdown value={this.state.typeUsers} options={this.state.typeUsers} optionLabel="nombre" id='typeUser' style={{width:'100%', margin: '5px'}} onChange={(e) =>{
               let val = e.target.value;
               this.setState(prevState => {
-                let typeUser = Object.assign({}, prevState.typeUser);
-                typeUser.nombre = val;
-                return { typeUser }
+                let user = Object.assign({}, prevState.user);
+                user.typeUser = val;
+                return { user }
               })
             }} />
             <label htmlFor='typeUser'>Tipo de Usuario</label>
